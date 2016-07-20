@@ -16,6 +16,7 @@ public class CampaignMap {
 	{
 		Integer c = coordinate;
 		return cm.get(c);
+		System.out.println("git got good");
 	}
 	
 
