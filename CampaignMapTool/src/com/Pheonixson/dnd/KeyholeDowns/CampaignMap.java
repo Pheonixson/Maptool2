@@ -8,11 +8,13 @@ public class CampaignMap {
 	private Map<Integer, CampaignLocation> cm;
 	private Map<String, CampaignLocation> cmStringMap;
 	private CampaignParty campaignParty;
+	private CampaignLocation currentLocation;
 
 	public CampaignMap() {
 		this.cm = new HashMap<Integer, CampaignLocation>();
 		this.cmStringMap = new HashMap<String, CampaignLocation>();
 		this.campaignParty = new CampaignParty();
+		this.currentLocation = new CampaignLocation();
 	}
 
 	/**
