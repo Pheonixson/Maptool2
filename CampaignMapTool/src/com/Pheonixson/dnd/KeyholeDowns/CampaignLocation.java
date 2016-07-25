@@ -3,8 +3,10 @@ package com.Pheonixson.dnd.KeyholeDowns;
 public class CampaignLocation {
 	private String locationName;
 	private String locationDescription;
-	
-	public CampaignLocation() {}
+
+	public CampaignLocation() {
+		this.locationDescription = "Not much to do here";
+	}
 
 	/**
 	 * @param locationName
@@ -23,7 +25,8 @@ public class CampaignLocation {
 	}
 
 	/**
-	 * @param locationName the locationName to set
+	 * @param locationName
+	 *            the locationName to set
 	 */
 	public void setLocationName(String locationName) {
 		this.locationName = locationName;
@@ -37,20 +40,21 @@ public class CampaignLocation {
 	}
 
 	/**
-	 * @param locationDescription the locationDescription to set
+	 * @param locationDescription
+	 *            the locationDescription to set
 	 */
 	public void setLocationDescription(String locationDescription) {
 		this.locationDescription = locationDescription;
 	}
 
-	/* (non-Javadoc)
+	/*
+	 * (non-Javadoc)
+	 * 
 	 * @see java.lang.Object#toString()
 	 */
 	@Override
 	public String toString() {
 		return locationName + ": " + locationDescription;
 	}
-	
-	
 
 }
